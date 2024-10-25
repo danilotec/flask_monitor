@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento CR</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento Remoto</h1>
+        <h2>CR Medical&Industry</h2>
+    </header>
+    <div class="login-container">
+        <h3>Register</h3>
+        <form action="/register" method="POST">
+            <label for="input_user_register"></label>
+            <input type="text" name="new_user" id="input_user" placeholder="Usuário">
+            <label for="input_password_register"></label>
+            <input type="password" name="new_password" id="input_password" placeholder="Senha">
+            <label for="input_screen_register"></label>
+            <input type="screen" name="new_screen" id="input_screen" placeholder="Nova Tela">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento CR</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento Remoto</h1>
+        <h2>CR Medical&Industry</h2>
+    </header>
+    <div class="login-container">
+        <h3>Login</h3>
+        <form action="/login" method="POST">
+            <label for="input_user"></label>
+            <input type="text" name="user" id="input_user" placeholder="Usuário">
+            <label for="input_password"></label>
+            <input type="password" name="password" id="input_password" placeholder="Senha">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="errorMessage"></p>
+        </div>
+    </div> -->
+
+    <!-- <script>
+        // Mostrar modal se houver mensagem de erro
+        window.onload = function() {
+            const message = "{{ get_flashed_messages()|join(', ') }}";
+            if (message) {
+                document.getElementById('errorMessage').innerText = message;
+                document.getElementById('errorModal').style.display = 'block';
+            }
+        };
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('errorModal').style.display = 'none';
+        }
+        </script> -->
+</body>
+</html>
